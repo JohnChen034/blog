@@ -1,0 +1,24 @@
+site_name: The Log
+
+
+markdown_extensions:
+  - attr_list
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: false
+  - attr_list
+
+theme:
+  name: material
+  custom_dir: overrides
+
+dev_addr: 127.0.0.1:8000
+plugins:
+  - search
+
+
+extra_css:
+  - stylesheets/extra.css

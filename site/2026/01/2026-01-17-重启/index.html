@@ -1,0 +1,921 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../..">
+      
+      
+        <link rel="next" href="../2026-01-18-%E5%87%86%E5%A4%87/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>重启 - The Log</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../css/terminal.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#phd" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="The Log" class="md-header__button md-logo" aria-label="The Log" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            The Log
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              重启
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="The Log" class="md-nav__button md-logo" aria-label="The Log" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    The Log
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Welcome to The Log
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2026
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2026
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    01
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    重启
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    重启
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#phd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        关于PHD
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        维持稳定
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2026-01-18-%E5%87%86%E5%A4%87/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    准备
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2026-01-19-%E5%8F%8D%E7%9C%81-and-Brainstorm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    反省 and Brainstorm
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2026-01-20-brainstorm-and-%E7%A2%8E%E7%A2%8E%E5%BF%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    brainstorm and 碎碎念
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2026-01-21-%E5%BC%80%E5%B7%A5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    开工
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2026-01-23-%E4%BC%91%E6%81%AF%E4%BD%86%E6%98%AF%E8%AD%A6%E6%88%92/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    休息但是警戒
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2026-01-24-%E5%9B%9E%E5%BF%86%E5%89%8D%E4%B8%A4%E5%A4%A9%E5%92%8C%E6%83%B3%E4%B8%80%E4%B8%8B%E6%9C%AA%E6%9D%A5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    回忆前两天和想一下未来
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2026-01-25-%E6%B2%A1%E6%97%B6%E9%97%B4%E4%BA%86%E5%85%A8%E9%80%9F%E5%86%B2%E5%88%BA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    没时间了全速冲刺
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2026-01-26-aftermeeting-and-plans/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    aftermeeting and plans
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2026-01-27-%E5%BC%80%E6%91%86%E5%92%8C%E6%A3%80%E8%AE%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    开摆和检讨
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2026-01-28-%E6%94%B6%E6%8B%BE%E8%87%AA%E5%B7%B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    收拾自己
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2026-01-29-go-to-fking-work/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    go to fking work
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2026-01-30-New-Log-Home/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    New Log Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#phd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        关于PHD
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        维持稳定
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>重启</h1>
+
+<p><img alt="强风吹拂" src="/img/run_with_the_wind.jpg" /></p>
+<p>前两周看完强风吹拂感觉蛮适合这个theme,也不知道放什么img所以借用一下. 花了两个小时的时间把原作者的blog抄了一下, 希望我的一些想法还没有忘记. 在这里就全方位的写一下我目前的状态吧. </p>
+<h2 id="phd">关于PHD</h2>
+<p>看了原作者的<a href="http://idle.systems/posts/I-quitted-phd.html">I quitted PHD</a>之后我已经快三天没有动力做任何学习了, 直到昨天晚上才理清楚原因在于原本坚定读PHD的想法有点开始动摇. 我个人对于做学术还是蛮有热情的, 虽然没有原PO那么聪明, 但是做一个螺丝还是有希望的. 本身我拿PHD当做一个可以拿工资做喜欢的事情+提升自我并且还可以顺带提高竞争力作为坚定读PHD的理由, 但是原PO让我意识到如果我想要继续做研究性质的工作, 其实工业界也是有的, 只不过需要研究方向在工业界有落地性. 这并不是以功利的角度看, 而是在我明确不想要长久走学术界走教职之后未来应该怎么打算. </p>
+<p>在CS里面很多方向可以对应到工业界的需求所以不愁找工作 (虽然如果真想挣钱也不用读CS PHD就是了). 但是我感兴趣的gentics/bioinfo/multiomics不一样. 我完全不知道如果在工业界想要做关于genetics+bioinfo方向的研究性质工作是什么样子的 (除开学校的lab RA 这种). 根本原因其实是这个方向没有在工业界有应用; 如果是clinical trial的话可以去药厂; CS methodology或者后端一些的bioinfo可以去CS的一些工作; protein DNA methylation可以去Google health?那种; 做LLM/clinical data也是可以医院/deepmind这种.  但是纯做scRNAseq/ATAC analysis除了biotech之外我没想到有什么出路, 而且很多biotech一般都会是初创公司, 很多都是创立没一会就倒闭了,没有稳定的上升通道可言. </p>
+<p>PHD会是一个很有意思, 可能痛苦, 但是很有意思的经历. 不过我后面的人生不会全部投入学术. 有太多别的东西让我感兴趣. 而且我希望我的未来以稳定为优先然后才会有动力开展别的东西. 长久的学术对我来说太过于challenging, 而金钱回报层面却没有很多. 那么目前来看选择一个跟工业界相关联的方向会是我的一个目标. 在biostat/bioinfo里面, 相关联并且我可能可以触及到的就是CS和Biostatistician了. 如果是biostatistician那么PHD会很有用, 但是会需要转方向到clinical trial或者至少是做关于clinical trial的methodolody之类的. 第二就是带一部分CS相关联的科研, 可能会是methodology development在machine learning类似shepherd这种?如果可以的话我当然想要去读CS的bioinfo, 不过希望比较渺茫. 不过也许可以去差一些的学校?idk. 干湿结合我本来觉得会很厉害, 不过现在看来我个人觉得要求的domain knowledge要学习的东西太多, 投入回报比比较低, 而且我甚至都没有一次正规的湿实验培训,所以这点还是算了. 其实跟GuangHao做的statsgen的methodology很有意思, 而且stats的知识我相信在我学过一遍的基础上, 应该是可以勉强通关的. </p>
+<p>这些其实更多是跟别人交流或者随着时间我会更清楚. 不过至少通过昨天晚上我确定的事我还是要读PHD的, 不管是基于之前提到的兴趣, 还是留美option的现实压力, 而且我不读PHD一定会后悔. 工作方面, 一部分要看大环境的推力, 一部分就要等读博士找到合适的实习/lab/课程project了. 大不了直接回国也未尝不能找到一份还ok的工作. lol这么说其实有点把这些坏事托给未来的自己的意思, 不过好像也没办法因为现在不可能解决, 只能走一步看一步然后保持刚找回的学术热情和坚定了, 不然连这两个lab的工作我都做不了了. </p>
+<p>不过打一下鸡血好了: hey至少Guanghao给了50FTE然后我个人感觉Yang大概率也会给50, 至少工作有着落了. 在预测个人未来方面, 也没有别的因素打扰我like家庭压力,女朋友,金钱. 我也不用离开uw暂时, 朋友方面也暂时脱离了没必要的社交. 生活方面找到了跑步的乐趣, 也打算有稍微空余的时候开始练钢琴. 就业压力也在未来有下降空间. 情感方面我也没有什么欲望.从第三人称看应该处于一个7/10的一个状态. 最近的一个顾虑就是PHD还差一封推荐信了, 目前还不知道怎么办, 有可能要陶瓷一个短期project?idk. </p>
+<h2 id="_1">维持稳定</h2>
+<p>我感觉前几天失去学习热情也有一些原因是有一点太闲了. 我会日常晚起晚睡, 甚至早睡晚起. 有可能是因为跑步影响了睡眠质量, 因为昨天没跑步之后我今天的状态异常的不错(甚至在熬到了4am睡觉的情况下). 这说明夜跑是完全不可行的, 只能说晨跑. 但是早上我很难起来, 有点找不回之前那种早上瞬间起来的状态了. 然后就是twice的演唱会, 虽然太好看了, 但是让我情绪有点亢奋, 然后加上之前提到的事情情绪大幅度提升和下降, 可能才是前几天状态不好的原因. </p>
+<p>那么现在的问题是我要怎么维持稳定, 以后. 首先就是一个足够强的地基也就是掌控感. 我应该在这一篇写下我所有的情况以及应对方式. </p>
+<ul>
+<li>
+<p>我必须要晨跑, 晨跑必须要6am起床 -&gt; 8km -&gt; 洗漱吃饭去学校大概9pm到. 这就代表:</p>
+<ul>
+<li>不能起床, 跑步, 洗澡, 吃饭看任何短视频, 快速做完所有流程. 可能可以听书.</li>
+<li>不能赖床, 不管有多难必须要闹钟响就起来</li>
+<li>需要开微弱的暖气, 以至于不会太冷加大起床难度. </li>
+<li>bus在学校可以想我今天要做什么, 不能停起伏很大的音乐, 纯音乐平静一些最好</li>
+<li>某些时刻不需要晨跑的情况下我就得7:30-8到学校. </li>
+</ul>
+</li>
+<li>
+<p>学习效率不是很高</p>
+<ul>
+<li>不能在家里呆着, 容易玩游戏/看视频</li>
+<li>只能去学校, 最好是bus去学校之后一直呆着, 中途晚上回家再开车的话可能会找不到好的停车位, 而且容易赖在家里, 所以最好不要中途回家. </li>
+<li>如果要打一会游戏或者在家看视频的话, 在3h之后必须要停止然后去学校. </li>
+<li>在学习的时候经常看短视频, 或者等待的时候看短视频. 其实都是不应该的. 在打字这篇blog的当下我就没有看过短视频, 所以还是注意力/task难度的问题. 充裕的时间会导致想要看手机, 但是难度太大的task导致焦虑也会看手机. 首先需要把手机放到不能玩的位置. 剩下的应该就是慢慢养成习惯就好. </li>
+<li>之前的工位我做的不爽的时候就可以去375教室旁边的桌子, 如果没人的话. 或者hey装点可乐,或者去8楼看看风景写blog然后晚点再回来学习.至少写blog会记录我不爽的时刻让我以后可以得到一些慰藉. </li>
+</ul>
+</li>
+</ul>
+<p>想了一下暂时没什么别的可以说的了. 未来和现在的顾虑都cover了, 过去的东西没啥好cover的或者忘了. 先这样吧, 希望之后不要再水了.  </p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

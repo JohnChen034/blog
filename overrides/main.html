@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {% if page.meta.music_link %}
+    <div class="music-float" id="music-float">
+      <button class="music-toggle" type="button" onclick="document.getElementById('music-float').classList.toggle('is-min')">
+        🎵
+      </button>
+
+      <div class="music-body">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/{{ page.meta.music_link | replace('https://www.youtube.com/watch?v=', '') | replace('https://youtu.be/', '') }}"
+          title="YouTube player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  {% endif %}
+
+  {{ super() }}
+{% endblock %}
